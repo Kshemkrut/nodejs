@@ -17,10 +17,5 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage('Stat'){
-            steps{
-                sh 'npm run start'
-            }
-        }
     }
 }

@@ -9,6 +9,7 @@ app.get("/", function (req, res) {
 
 app.post("/submit-data", function (req, res) {
   var name = req.body.firstName + " " + req.body.lastName;
+  console.log(name);
   res.send(name + " submitted successfully");
 });
 
